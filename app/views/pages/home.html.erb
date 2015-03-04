@@ -1,0 +1,22 @@
+<h2>USERS</h2>
+<% @users.each do |u| %>
+  <p> <%= u.username %> | <%= u.age %> | <%= u.email %> </p>
+<% end %>
+
+<br>
+
+<h2>CATS</h2>
+<% @cats.each do |c| %>
+  <p> <%= c.name %> </p>
+<% end %>
+
+<br>
+
+<h2>TODOS</h2>
+<% @todos.each do |t| %>
+  <p> <%= t.task %> 
+  <% if t.finished %>	☑
+  <% else %>	☐
+  <% end %>
+  </p>
+<% end %>
